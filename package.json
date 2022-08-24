@@ -9,13 +9,15 @@
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
     "axios-progress-bar": "^1.2.0",
+    "formik": "^2.2.9",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "sweetalert2": "^11.4.17",
-    "web-vitals": "^2.1.4"
+    "sweetalert2": "^11.4.29",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
