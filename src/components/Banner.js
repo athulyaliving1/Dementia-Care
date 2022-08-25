@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Swal from "sweetalert2";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -26,6 +29,9 @@ const schema = Yup.object({
 
 function Banner() {
   const [status, setStatus] = useState("Submit");
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   const formSubmit = async (e) => {
     e.preventDefault();
@@ -74,10 +80,10 @@ function Banner() {
     }, 2000);
   };
   return (
-    <div className=" bg-zinc-50 pt-5 md:pt-16 md:mt-0 md:block hidden  ">
+    <div className=" bg-zinc-50 pt-5 md:pt-16 md:mt-0  md:block hidden  ">
       <div
         class="
-		md:bg-[url('https://athulyahomecare.com/lp/images/banner.png')]  h-full w-full bg-cover bg-no-repeat   "
+		md:bg-[url('https://res.cloudinary.com/drywqd3hf/image/upload/v1661407741/1348x494_Dementia_banner_jkqevi.jpg')]  h-full w-full bg-cover bg-no-repeat  md:pb-32 "
       >
         <div className="container mx-auto   grid md:grid-cols-2">
           <div className="md:hidden block mt-10 md:mt-0"></div>
@@ -86,7 +92,7 @@ function Banner() {
               <h1 className="xl:text-3xl  flex justify-center text-xl font-sans font-semibold  md:text-white  text-sky-800 md:p-5 p-2  ">
                 Our Doctor Visits At Home
               </h1>
-              <div className="grid grid-flow-row  bg-zinc-50  rounded-2xl px-5 p-5 xl:block  font-Poppins">
+              <div data-aos="fade-up"  className="grid grid-flow-row  bg-zinc-50  rounded-2xl px-5 p-5 xl:block  font-Poppins">
                 <div>
                   <Formik
                     initialValues={{
@@ -178,7 +184,7 @@ function Banner() {
                               name="textarea"
                               id="textarea"
                               rows="4"
-                              class="peer   w-100 mt-2 py-3 px-3 rounded-lg bg-white  border-2   border-sky-800   font-semibold focus:border-sky-700 focus:outline-none"
+                              class="peer   w-100 mt-2 py-3 px-3 rounded-lg bg-zinc-50  border-2   border-sky-800   font-semibold focus:border-sky-700 focus:outline-none"
                             />
                             {errors.textarea && touched.textarea ? (
                               <p className="text-pink-500 font-Poppins font-semibold">
@@ -187,7 +193,7 @@ function Banner() {
                             ) : null}
                           </div>
                           <div className="flex justify-center  md:py-1">
-                            <button class="  rounded-md py-3 px-6 m-1 overflow-hidden relative group cursor-pointer border-2  border-sky-800  text-white bg-pink-600 font-bold">
+                            <button class="  rounded-md py-3 px-6 m-1 overflow-hidden relative group cursor-pointer border-2  border-sky-800  text-white bg-pink-500 font-bold">
                               <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-sky-900 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
                               <span class="relative  text-white transition duration-300 group-hover:text-white ease">
                                 {status}

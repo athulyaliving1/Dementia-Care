@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function MbBanner() {
   const [status, setStatus] = useState("Submit");
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -77,7 +84,7 @@ function MbBanner() {
       <div className=" md:grid-cols-2 block md:hidden">
         <div className="md:hidden block mt-10 md:mt-0">
           <img
-            src="https://athulyahomecare.com/lp/images/sm-banner.png"
+            src="https://res.cloudinary.com/drywqd3hf/image/upload/v1661416248/380x432-mobile-banner-dementia_dmcnta.png"
             alt="smpic"
           />
         </div>
@@ -104,97 +111,97 @@ function MbBanner() {
                   {({ errors, touched }) => (
                     <Form onSubmit={formSubmit}>
                       <div className="">
-                          <div class="relative z-0 mb-6 w-full group">
-                            <Field
-                              type="name"
-                              name="name"
-                              id="floating_name"
-                              class="block py-2.5 px-0 w-full text-xl font-Robot font-semibold   text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none focus:outline-none focus:ring-0 focus:border-sky-800 peer"
-                              placeholder=" "
-                              required
-                            />
-                            {errors.name && touched.name ? (
-                              <p className="text-pink-500 font-Poppins font-semibold">
-                                {errors.name}
-                              </p>
-                            ) : null}
-                            <label
-                              for="floating_name"
-                              class="peer-focus:font-semibold  text-xl font-Robot font-semibold   absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                            >
-                              Full Name
-                            </label>
-                          </div>
-                          <div class="relative z-0 mb-6 w-full group">
-                            <Field
-                              type="email"
-                              name="email"
-                              id="floating_email"
-                              class="block py-2.5 px-0 w-full text-xl font-Robot font-semibold  text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
-                              placeholder=" "
-                              required
-                            />
-                            {errors.email && touched.email ? (
-                              <p className="text-pink-500 font-Poppins font-semibold">
-                                {errors.email}
-                              </p>
-                            ) : null}
-                            <label
-                              for="floating_email"
-                              class="peer-focus:font-semibold   text-xl font-Robot font-semibold    absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                            >
-                              Email address
-                            </label>
-                          </div>
-                          <div class="relative z-0 mb-6 w-full group">
-                            <Field
-                              type="number"
-                              name="number"
-                              id="floating_number"
-                              class="block py-2.5 px-0 w-full  text-xl font-Robot  font-semibold  text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
-                              placeholder=" "
-                              required
-                            />
-                            {errors.number && touched.number ? (
-                              <p className="text-pink-500 font-Poppins font-semibold">
-                                {errors.number}
-                              </p>
-                            ) : null}
-                            <label
-                              for="floating_number"
-                              class="peer-focus:font-semibold   text-xl font-Robot  font-semibold  absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                            >
-                              Mobile Number
-                            </label>
-                          </div>
-                          <div class="flex flex-col mt-2">
-                            <label
-                              className="text-sky-800  text-xl font-semibold"
-                              htmlFor="textarea"
-                            >
-                              Message
-                            </label>
-                            <Field
-                              name="textarea"
-                              id="textarea"
-                              rows="4"
-                              class="peer   w-100 mt-2 py-3 px-3 rounded-lg bg-white  border-2   border-sky-800   font-semibold focus:border-sky-700 focus:outline-none"
-                            />
-                            {errors.textarea && touched.textarea ? (
-                              <p className="text-pink-500 font-Poppins font-semibold">
-                                {errors.textarea}
-                              </p>
-                            ) : null}
-                          </div>
-                          <div className="flex justify-center  md:py-1">
-                            <button class="  rounded-md py-3 px-6 m-1 overflow-hidden relative group cursor-pointer border-2  border-sky-800  text-white bg-pink-600 font-bold">
-                              <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-sky-900 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                              <span class="relative  text-white transition duration-300 group-hover:text-white ease">
-                                {status}
-                              </span>
-                            </button>
-                          </div>
+                        <div class="relative z-0 mb-6 w-full group">
+                          <Field
+                            type="name"
+                            name="name"
+                            id="floating_name"
+                            class="block py-2.5 px-0 w-full text-xl font-Robot font-semibold   text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none focus:outline-none focus:ring-0 focus:border-sky-800 peer"
+                            placeholder=" "
+                            required
+                          />
+                          {errors.name && touched.name ? (
+                            <p className="text-pink-500 font-Poppins font-semibold">
+                              {errors.name}
+                            </p>
+                          ) : null}
+                          <label
+                            for="floating_name"
+                            class="peer-focus:font-semibold  text-lg font-Robot font-semibold   absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                          >
+                            Full Name
+                          </label>
                         </div>
+                        <div class="relative z-0 mb-6 w-full group">
+                          <Field
+                            type="email"
+                            name="email"
+                            id="floating_email"
+                            class="block py-2.5 px-0 w-full text-lg font-Robot font-semibold  text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
+                            placeholder=" "
+                            required
+                          />
+                          {errors.email && touched.email ? (
+                            <p className="text-pink-500 font-Poppins font-semibold">
+                              {errors.email}
+                            </p>
+                          ) : null}
+                          <label
+                            for="floating_email"
+                            class="peer-focus:font-semibold   text-lg font-Robot font-semibold    absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                          >
+                            Email address
+                          </label>
+                        </div>
+                        <div class="relative z-0 mb-6 w-full group">
+                          <Field
+                            type="number"
+                            name="number"
+                            id="floating_number"
+                            class="block py-2.5 px-0 w-full  text-lg font-Robot  font-semibold  text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
+                            placeholder=" "
+                            required
+                          />
+                          {errors.number && touched.number ? (
+                            <p className="text-pink-500 font-Poppins font-semibold">
+                              {errors.number}
+                            </p>
+                          ) : null}
+                          <label
+                            for="floating_number"
+                            class="peer-focus:font-semibold   text-lg font-Robot  font-semibold  absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                          >
+                            Mobile Number
+                          </label>
+                        </div>
+                        <div class="flex flex-col mt-2">
+                          <label
+                            className="text-sky-800  text-lg font-semibold"
+                            htmlFor="textarea"
+                          >
+                            Message
+                          </label>
+                          <Field
+                            name="textarea"
+                            id="textarea"
+                            rows="4"
+                            class="peer   w-100 mt-2 py-3 px-3 rounded-lg bg-zinc-100  border-2   border-sky-800   font-semibold focus:border-sky-700 focus:outline-none"
+                          />
+                          {errors.textarea && touched.textarea ? (
+                            <p className="text-pink-500 font-Poppins font-semibold">
+                              {errors.textarea}
+                            </p>
+                          ) : null}
+                        </div>
+                        <div className="flex justify-center  md:py-1">
+                          <button class="  rounded-md py-3 px-6 m-1 overflow-hidden relative group cursor-pointer border-2  border-sky-800  text-white bg-pink-500 font-bold">
+                            <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-sky-900 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                            <span class="relative  text-white transition duration-300 group-hover:text-white ease">
+                              {status}
+                            </span>
+                          </button>
+                        </div>
+                      </div>
                     </Form>
                   )}
                 </Formik>

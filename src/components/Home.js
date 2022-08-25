@@ -7,6 +7,7 @@ import MbBanner from "./Main/MbBanner";
 import MbNav from "./Main/MbNav";
 import NavbarXl from "./Main/NavbarXl";
 import Para from "./Main/Para";
+import Testimonal from "./Main/Testmonial";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <Content />
       <Para />
       <Iconpage />
+      <Testimonal/>
       <Footer />
     </div>
   );

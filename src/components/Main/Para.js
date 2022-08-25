@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Para() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div>
       <div className="text-center text-sky-800 text-xl  font-Poppins font-semibold  md:text-3xl m-5">
         "Cognitive Disability Doesn't Mean The Journey Has To End."
       </div>
-      <div className="container mx-auto md:px-0 px-5  md:text-xl font-Roboto opacity-80 text-justify ">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        className="container mx-auto md:px-0 px-5  md:text-xl font-Roboto opacity-80 text-justify pb-5 "
+      >
         Our dedicated caregivers are committed to helping your loved ones live
         their best lives in the healthiest ways possible. You and your family
         can relax knowing that your loved one is getting the individualized,
