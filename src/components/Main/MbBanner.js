@@ -2,30 +2,29 @@ import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-
-const phoneRegExp =
-  /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
-
-const schema = Yup.object({
-  name: Yup.string().required().min(3).max(15),
-  email: Yup.string()
-    .email("That doesn't look like a valid email")
-    .required("This field is required."),
-  number: Yup.string()
-    .matches(phoneRegExp, "Phone number is not valid")
-    .min(10)
-    .max(10)
-    .required(),
-
-  textarea: Yup.string()
-    .matches(/^[A-Za-z ]*$/, "Please enter text only")
-    .min(10)
-    .max(40)
-    .required(),
-}).required();
-
-function Banner() {
+function MbBanner() {
   const [status, setStatus] = useState("Submit");
+
+  const phoneRegExp =
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+
+  const schema = Yup.object({
+    name: Yup.string().required().min(3).max(15),
+    email: Yup.string()
+      .email("That doesn't look like a valid email")
+      .required("This field is required."),
+    number: Yup.string()
+      .matches(phoneRegExp, "Phone number is not valid")
+      .min(10)
+      .max(10)
+      .required(),
+
+    textarea: Yup.string()
+      .matches(/^[A-Za-z ]*$/, "Please enter text only")
+      .min(10)
+      .max(40)
+      .required(),
+  }).required();
 
   const formSubmit = async (e) => {
     e.preventDefault();
@@ -74,36 +73,37 @@ function Banner() {
     }, 2000);
   };
   return (
-    <div className=" bg-zinc-50 pt-5 md:pt-16 md:mt-0 md:block hidden  ">
-      <div
-        class="
-		md:bg-[url('https://athulyahomecare.com/lp/images/banner.png')]  h-full w-full bg-cover bg-no-repeat   "
-      >
-        <div className="container mx-auto   grid md:grid-cols-2">
-          <div className="md:hidden block mt-10 md:mt-0"></div>
-          <div className="">
-            <div className="container text-justify mt-5 mb-5 ">
-              <h1 className="xl:text-3xl  flex justify-center text-xl font-sans font-semibold  md:text-white  text-sky-800 md:p-5 p-2  ">
-                Our Doctor Visits At Home
-              </h1>
-              <div className="grid grid-flow-row  bg-zinc-50  rounded-2xl px-5 p-5 xl:block  font-Poppins">
-                <div>
-                  <Formik
-                    initialValues={{
-                      name: "",
-                      email: "",
-                      textarea: "",
-                      number: "",
-                    }}
-                    validationSchema={schema}
-                    onSubmit={(values) => {
-                      // same shape as initial values
-                      console.log(values);
-                    }}
-                  >
-                    {({ errors, touched }) => (
-                      <Form onSubmit={formSubmit}>
-                        <div className="">
+    <div>
+      <div className=" md:grid-cols-2 block md:hidden">
+        <div className="md:hidden block mt-10 md:mt-0">
+          <img
+            src="https://athulyahomecare.com/lp/images/sm-banner.png"
+            alt="smpic"
+          />
+        </div>
+        <div className="">
+          <div className="container text-justify mt-5 mb-5 ">
+            <h1 className="xl:text-3xl  flex justify-center text-xl font-sans font-semibold  md:text-white  text-sky-800 md:p-5 p-2  ">
+              Our Doctor Visits At Home
+            </h1>
+            <div className="grid grid-flow-row  bg-zinc-100  rounded-2xl px-5 p-3 xl:block  font-Poppins">
+              <div>
+                <Formik
+                  initialValues={{
+                    name: "",
+                    email: "",
+                    textarea: "",
+                    number: "",
+                  }}
+                  validationSchema={schema}
+                  onSubmit={(values) => {
+                    // same shape as initial values
+                    console.log(values);
+                  }}
+                >
+                  {({ errors, touched }) => (
+                    <Form onSubmit={formSubmit}>
+                      <div className="">
                           <div class="relative z-0 mb-6 w-full group">
                             <Field
                               type="name"
@@ -195,10 +195,9 @@ function Banner() {
                             </button>
                           </div>
                         </div>
-                      </Form>
-                    )}
-                  </Formik>
-                </div>
+                    </Form>
+                  )}
+                </Formik>
               </div>
             </div>
           </div>
@@ -208,4 +207,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default MbBanner;

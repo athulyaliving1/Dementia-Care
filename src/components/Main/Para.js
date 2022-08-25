@@ -3,7 +3,7 @@ import React from "react";
 function Para() {
   return (
     <div>
-      <div className="flex justify-center text-sky-800 text-2xl   md:text-3xl m-5">
+      <div className="text-center text-sky-800 text-xl  font-Poppins font-semibold  md:text-3xl m-5">
         "Cognitive Disability Doesn't Mean The Journey Has To End."
       </div>
       <div className="container mx-auto md:px-0 px-5  md:text-xl font-Roboto opacity-80 text-justify ">
