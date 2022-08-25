@@ -109,7 +109,7 @@ function MbBanner() {
                               type="name"
                               name="name"
                               id="floating_name"
-                              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none focus:outline-none focus:ring-0 focus:border-sky-800 peer"
+                              class="block py-2.5 px-0 w-full text-xl font-Robot font-semibold   text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none focus:outline-none focus:ring-0 focus:border-sky-800 peer"
                               placeholder=" "
                               required
                             />
@@ -120,7 +120,7 @@ function MbBanner() {
                             ) : null}
                             <label
                               for="floating_name"
-                              class="peer-focus:font-semibold   text-xl font-semibold    absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                              class="peer-focus:font-semibold  text-xl font-Robot font-semibold   absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                             >
                               Full Name
                             </label>
@@ -130,7 +130,7 @@ function MbBanner() {
                               type="email"
                               name="email"
                               id="floating_email"
-                              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
+                              class="block py-2.5 px-0 w-full text-xl font-Robot font-semibold  text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
                               placeholder=" "
                               required
                             />
@@ -141,7 +141,7 @@ function MbBanner() {
                             ) : null}
                             <label
                               for="floating_email"
-                              class="peer-focus:font-semibold   text-xl font-semibold    absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                              class="peer-focus:font-semibold   text-xl font-Robot font-semibold    absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                             >
                               Email address
                             </label>
@@ -151,7 +151,7 @@ function MbBanner() {
                               type="number"
                               name="number"
                               id="floating_number"
-                              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
+                              class="block py-2.5 px-0 w-full  text-xl font-Robot  font-semibold  text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
                               placeholder=" "
                               required
                             />
@@ -162,7 +162,7 @@ function MbBanner() {
                             ) : null}
                             <label
                               for="floating_number"
-                              class="peer-focus:font-semibold   text-xl font-semibold    absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                              class="peer-focus:font-semibold   text-xl font-Robot  font-semibold  absolute  text-sky-800  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-pink-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                             >
                               Mobile Number
                             </label>
