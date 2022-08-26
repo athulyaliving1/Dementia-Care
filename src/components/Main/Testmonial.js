@@ -1,5 +1,7 @@
 import React from "react";
-import Quote from "../Assets/quote.png";
+import Quote from "../Assets/11.jpg";
+import Quote1 from "../Assets/12.jpg";
+import Quote2 from "../Assets/13.jpg";
 
 import {
   CarouselProvider,
@@ -57,7 +59,7 @@ export default function Testimonal() {
                           <img
                             alt="testimonial"
                             class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100 "
-                            src={Quote}
+                            src={Quote1}
                           />
                           <p class="leading-relaxed">
                             Edison bulb retro cloud bread echo park, helvetica
@@ -77,7 +79,7 @@ export default function Testimonal() {
                           <img
                             alt="testimonial"
                             class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
-                            src={Quote}
+                            src={Quote2}
                           />
                           <p class="leading-relaxed">
                             Edison bulb retro cloud bread echo park, helvetica
