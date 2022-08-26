@@ -1,7 +1,5 @@
 import React from "react";
-import Quote from  "../Assets/quote.png"
-
-
+import Quote from "../Assets/quote.png";
 
 import {
   CarouselProvider,
