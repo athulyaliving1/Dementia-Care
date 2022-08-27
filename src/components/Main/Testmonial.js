@@ -1,57 +1,61 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Quote from "../Assets/11.jpg";
-import Quote1 from "../Assets/12.jpg";
-import Quote2 from "../Assets/13.jpg";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import {
   CarouselProvider,
   Slider,
   Slide,
-  ButtonBack,
-  ButtonNext,
+
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 /* Install pure-react-carousel using -> npm i pure-react-carousel */
 export default function Testimonal() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div>
-      <div className="flex items-center justify-between  absolute z-0">
+    <div className="md:block  hidden">
+      <div className="flex items-center justify-between  absolute z-0  ">
         <div className="w-1/3 bg-white " />
         <div className="w-4/6 ml-16 bg-gray-100 h-full" />
       </div>
-      <div className="xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container relative z-40">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        className="xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container relative z-40"
+      >
         <CarouselProvider
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
-          totalSlides={2}
+          totalSlides={1}
         >
           <h1 className="text-center text-sky-800 text-xl  font-Poppins font-semibold  md:text-3xl m-5">
-            What our customers are saying
+            What Our Clients Are Saying
           </h1>
           <Slider>
             <Slide index={0} tabIndex="null">
               <div className="">
-                <section class="text-gray-600 body-font">
+                <section class=" body-font">
                   <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-wrap -m-4">
                       <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
                         <div class="h-full text-center">
                           <img
                             alt="testimonial"
-                            class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
+                            class="w-20 h-20   mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
                             src={Quote}
                           />
-                          <p class="leading-relaxed">
-                            Edison bulb retro cloud bread echo park, helvetica
-                            stumptown taiyaki taxidermy 90's cronut +1 kinfolk.
-                            Single-origin coffee ennui shaman taiyaki vape DIY
-                            tote bag drinking vinegar cronut adaptogen squid
-                            fanny pack vaporware.
+                          <p class="leading-relaxed  md:text-xl font-Roboto opacity-80 text-justify pb-5 ">
+                            Thank you very much Mr. Sathish Sir who attended the
+                            patient. He is very humble and polite to give the
+                            services to my grandfather with dementia. He
+                            explained the process and diseases in simple terms.
                           </p>
-                          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
-                            HOLDEN CAULFIELD
-                          </h2>
+                          <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-6 mb-4"></span>
                         </div>
                       </div>
                       <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
@@ -59,19 +63,16 @@ export default function Testimonal() {
                           <img
                             alt="testimonial"
                             class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100 "
-                            src={Quote1}
+                            src={Quote}
                           />
-                          <p class="leading-relaxed">
-                            Edison bulb retro cloud bread echo park, helvetica
-                            stumptown taiyaki taxidermy 90's cronut +1 kinfolk.
-                            Single-origin coffee ennui shaman taiyaki vape DIY
-                            tote bag drinking vinegar cronut adaptogen squid
-                            fanny pack vaporware.
+                          <p class="leading-relaxed md:text-xl font-Roboto opacity-80 text-justify pb-5 ">
+                            I have my own share of experience with multiple
+                            assisted living facilities. Athulya care services
+                            definitely tops the list, very very professional
+                            memory care provided by the nurses to my in law.
+                            Thank you so much.
                           </p>
-                          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
-                            ALPER KAMU
-                          </h2>
+                          <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-6 mb-4"></span>
                         </div>
                       </div>
                       <div class="lg:w-1/3 lg:mb-0 p-4">
@@ -79,19 +80,15 @@ export default function Testimonal() {
                           <img
                             alt="testimonial"
                             class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
-                            src={Quote2}
+                            src={Quote}
                           />
-                          <p class="leading-relaxed">
-                            Edison bulb retro cloud bread echo park, helvetica
-                            stumptown taiyaki taxidermy 90's cronut +1 kinfolk.
-                            Single-origin coffee ennui shaman taiyaki vape DIY
-                            tote bag drinking vinegar cronut adaptogen squid
-                            fanny pack vaporware.
+                          <p class="leading-relaxed md:text-xl font-Roboto opacity-80 text-justify pb-5">
+                            Athulya was extremely supportive was very responding
+                            immediately in calls and what’s app chat. Completely
+                            happy with their care service and appreciate their
+                            support and help. Thanks once again.
                           </p>
-                          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
-                            HENRY LETHAM
-                          </h2>
+                          <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-6 mb-4"></span>
                         </div>
                       </div>
                     </div>
@@ -99,58 +96,8 @@ export default function Testimonal() {
                 </section>
               </div>
             </Slide>
-            <Slide index={1}>
-              <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-zinc-100 rounded-lg shadow-lg ">
-                <div class="flex justify-center -mt-16 md:justify-end">
-                  <img
-                    class="object-cover w-20 h-20 border-2 border-sky-800 rounded-full "
-                    alt="Testimonial avatar"
-                    src={Quote}
-                  />
-                </div>
-
-                <h2 class="mt-2 text-2xl font-semibold text-gray-800 md:mt-0 md:text-3xl">
-                  Lorem ipsum
-                </h2>
-
-                <p class="mt-2 text-gray-600 ">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                  dolores deserunt ea doloremque natus error, rerum quas odio
-                  quaerat nam ex commodi hic, suscipit in a veritatis pariatur
-                  minus consequuntur!
-                </p>
-
-                <div class="flex justify-end mt-4">
-                  <p class="text-xl font-medium text-blue-500 ">Lorem ipsum</p>
-                </div>
-              </div>
-              <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-zinc-100 rounded-lg shadow-lg   ">
-                <div class="flex justify-center -mt-16 md:justify-end">
-                  <img
-                    class="object-cover w-20 h-20 border-2 border-sky-800 rounded-full "
-                    alt="Testimonial avatar"
-                    src={Quote}
-                  />
-                </div>
-
-                <h2 class="mt-2 text-2xl font-semibold text-gray-800 md:mt-0 md:text-3xl">
-                  Lorem ipsum
-                </h2>
-
-                <p class="mt-2 text-gray-600 ">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                  dolores deserunt ea doloremque natus error, rerum quas odio
-                  quaerat nam ex commodi hic, suscipit in a veritatis pariatur
-                  minus consequuntur!
-                </p>
-
-                <div class="flex justify-end mt-4">
-                  <p class="text-xl font-medium text-blue-500 ">John Doe</p>
-                </div>
-              </div>
-            </Slide>
           </Slider>
-          <div className="flex items-center mt-8">
+          {/* <div className="flex items-center mt-8">
             <ButtonBack
               className="cursor-pointer "
               role="button"
@@ -188,7 +135,7 @@ export default function Testimonal() {
                 />
               </svg>
             </ButtonNext>
-          </div>
+          </div> */}
         </CarouselProvider>
       </div>
     </div>

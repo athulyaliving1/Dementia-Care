@@ -33,6 +33,9 @@ export const Content = () => {
           />
         </div>
         <div data-aos="fade-left" className="flex flex-col justify-center">
+          <h1 className="text-center text-sky-800 text-xl  font-Poppins font-semibold  md:text-3xl m-5">
+            Holistic Memory Care
+          </h1>
           <div className="pb-4 mb-4 border-b border-pink-500 ">
             <p className=" md:text-xl font-Roboto opacity-80 text-justify">
               Athulya assisted living in Bangalore offers the kind of care we

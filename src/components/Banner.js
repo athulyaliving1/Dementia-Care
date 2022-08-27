@@ -1,10 +1,9 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -90,9 +89,12 @@ function Banner() {
           <div className="">
             <div className="container text-justify mt-5 mb-5 ">
               <h1 className="xl:text-3xl  flex justify-center text-xl font-sans font-semibold  md:text-white  text-sky-800 md:p-5 p-2  ">
-                Our Doctor Visits At Home
+                Submit Your Details
               </h1>
-              <div data-aos="fade-up"  className="grid grid-flow-row  bg-zinc-50  rounded-2xl px-5 p-5 xl:block  font-Poppins">
+              <div
+                data-aos="fade-up"
+                className="grid grid-flow-row  bg-zinc-50  rounded-2xl px-5 p-5 xl:block  font-Poppins"
+              >
                 <div>
                   <Formik
                     initialValues={{
