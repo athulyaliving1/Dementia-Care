@@ -46,7 +46,7 @@ function MbBanner() {
       textarea: textarea.value,
     };
     let response = await fetch(
-      "https://contact-app-server-athulya.herokuapp.com/contact",
+      "http://162.241.222.86:5000/contactdementiacarebangalore",
       {
         method: "POST",
         headers: {
@@ -84,14 +84,14 @@ function MbBanner() {
       <div className=" md:grid-cols-2 block md:hidden">
         <div className="md:hidden block mt-10 md:mt-0">
           <img
-            src="https://res.cloudinary.com/drywqd3hf/image/upload/v1661416248/380x432-mobile-banner-dementia_dmcnta.png"
+            src="https://athulyahomecare.com/images/baner-mob.png"
             alt="smpic"
           />
         </div>
         <div className="">
           <div className="container text-justify mt-5 mb-5 ">
             <h1 className="xl:text-3xl  flex justify-center text-xl font-sans font-semibold  md:text-white  text-sky-800 md:p-5 p-2  ">
-              Our Doctor Visits At Home
+            Submit Your Details
             </h1>
             <div className="grid grid-flow-row  bg-zinc-100  rounded-2xl px-5 p-3 xl:block  font-Poppins">
               <div>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Quote from "../Assets/11.jpg";
+// import Quote from "../Assets/11.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -30,16 +30,16 @@ function MbTestimonial() {
             </h1>
           </div>
         </div>
-      </div> 
+      </div>
       <Slider {...settings}>
         <div className="bg-zinc-100 ">
           <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-            <div  data-aos="flip-left"  class="h-full text-center">
+            <div data-aos="flip-left" class="h-full text-center">
               <div className=" flex justify-end">
                 <img
                   alt="testimonial"
                   class="w-20 h-20   mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
-                  src={Quote}
+                  src="https://athulyahomecare.com/images/11.jpg"
                 />
               </div>
 
@@ -60,7 +60,7 @@ function MbTestimonial() {
                 <img
                   alt="testimonial"
                   class="w-20 h-20   mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
-                  src={Quote}
+                  src="https://athulyahomecare.com/images/11.jpg"
                 />
               </div>
               <p class="leading-relaxed  md:text-xl font-Roboto opacity-80 text-justify pb-5 ">
@@ -80,7 +80,7 @@ function MbTestimonial() {
                 <img
                   alt="testimonial"
                   class="w-20 h-20   mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
-                  src={Quote}
+                  src="https://athulyahomecare.com/images/11.jpg"
                 />
               </div>
               <p class="leading-relaxed  md:text-xl font-Roboto opacity-80 text-justify pb-5 ">

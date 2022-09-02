@@ -45,7 +45,7 @@ function Banner() {
       textarea: textarea.value,
     };
     let response = await fetch(
-      "https://contact-app-server-athulya.herokuapp.com/contact",
+      "https://contact-app-server-athulya.herokuapp.com/contactdementiacarebangalore",
       {
         method: "POST",
         headers: {
@@ -82,7 +82,7 @@ function Banner() {
     <div className=" bg-zinc-50 pt-5 md:pt-16 md:mt-0  md:block hidden  ">
       <div
         class="
-		md:bg-[url('https://res.cloudinary.com/drywqd3hf/image/upload/v1661407741/1348x494_Dementia_banner_jkqevi.jpg')]  h-full w-full bg-cover bg-no-repeat  md:pb-32 "
+		md:bg-[url('https://athulyahomecare.com/images/baner.jpg')]  h-full w-full bg-cover bg-no-repeat  md:pb-32 "
       >
         <div className="container mx-auto   grid md:grid-cols-2">
           <div className="md:hidden block mt-10 md:mt-0"></div>

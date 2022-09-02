@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import hrs from "../Assets/1.png";
-import PersonalizedCarePlans from "../Assets/2.png";
-import hourNursingCare from "../Assets/3.png";
-import Dailyactivities from "../Assets/4.png";
-import Nutritiousdiet from "../Assets/5.png";
+// import hrs from "../Assets/1.png";
+// import PersonalizedCarePlans from "../Assets/2.png";
+// import hourNursingCare from "../Assets/3.png";
+// import Dailyactivities from "../Assets/4.png";
+// import Nutritiousdiet from "../Assets/5.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -28,7 +28,7 @@ export const Iconpage = () => {
           <div className="flex flex-col items-center">
             <img
               className="object-cover w-20 h-20 mb-2 rounded-full shadow"
-              src={hrs}
+              src="https://athulyahomecare.com/images/1.png"
               alt="Person"
             />
             <div className="flex flex-col items-center">
@@ -40,7 +40,7 @@ export const Iconpage = () => {
           <div className="flex flex-col items-center">
             <img
               className="object-cover w-20 h-20 mb-2 rounded-full shadow"
-              src={PersonalizedCarePlans}
+              src="https://athulyahomecare.com/images/2.png"
               alt="Person"
             />
             <div className="flex flex-col items-center">
@@ -52,7 +52,7 @@ export const Iconpage = () => {
           <div className="flex flex-col items-center">
             <img
               className="object-cover w-20 h-20 mb-2 rounded-full shadow"
-              src={hourNursingCare}
+              src="https://athulyahomecare.com/images/3.png"
               alt="Person"
             />
             <div className="flex flex-col items-center">
@@ -64,7 +64,7 @@ export const Iconpage = () => {
           <div className="flex flex-col items-center">
             <img
               className="object-cover w-20 h-20 mb-2 rounded-full shadow"
-              src={Dailyactivities}
+              src="https://athulyahomecare.com/images/4.png"
               alt="Person"
             />
             <div className="flex flex-col items-center">
@@ -76,7 +76,7 @@ export const Iconpage = () => {
           <div className="flex flex-col items-center">
             <img
               className="object-cover w-20 h-20 mb-2 rounded-full shadow"
-              src={Nutritiousdiet}
+              src="https://athulyahomecare.com/images/5.png"
               alt="Person"
             />
             <div className="flex flex-col items-center">

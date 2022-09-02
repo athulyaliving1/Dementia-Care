@@ -1,15 +1,10 @@
 import React, { useEffect } from "react";
-import Quote from "../Assets/11.jpg";
+// import Quote from "../Assets/11.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-
-} from "pure-react-carousel";
+import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 /* Install pure-react-carousel using -> npm i pure-react-carousel */
 export default function Testimonal() {
@@ -47,7 +42,7 @@ export default function Testimonal() {
                           <img
                             alt="testimonial"
                             class="w-20 h-20   mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
-                            src={Quote}
+                            src="https://athulyahomecare.com/images/11.jpg"
                           />
                           <p class="leading-relaxed  md:text-xl font-Roboto opacity-80 text-justify pb-5 ">
                             Thank you very much Mr. Sathish Sir who attended the
@@ -63,7 +58,7 @@ export default function Testimonal() {
                           <img
                             alt="testimonial"
                             class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100 "
-                            src={Quote}
+                            src="https://athulyahomecare.com/images/11.jpg"
                           />
                           <p class="leading-relaxed md:text-xl font-Roboto opacity-80 text-justify pb-5 ">
                             I have my own share of experience with multiple
@@ -80,7 +75,7 @@ export default function Testimonal() {
                           <img
                             alt="testimonial"
                             class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
-                            src={Quote}
+                            src="https://athulyahomecare.com/images/11.jpg"
                           />
                           <p class="leading-relaxed md:text-xl font-Roboto opacity-80 text-justify pb-5">
                             Athulya was extremely supportive was very responding

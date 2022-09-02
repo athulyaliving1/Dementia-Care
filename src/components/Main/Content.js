@@ -18,17 +18,17 @@ export const Content = () => {
         >
           <img
             className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-            src="https://res.cloudinary.com/drywqd3hf/image/upload/v1661416248/496x226-dementia_1_hhi3jh.png"
+            src="https://athulyahomecare.com/images/496x226-dementi.png"
             alt=""
           />
           <img
             className="object-cover w-full h-48 rounded shadow-lg"
-            src="https://res.cloudinary.com/drywqd3hf/image/upload/v1661407911/238x192-dementia-2_ojuhqb.png"
+            src="https://athulyahomecare.com/images/238x192-dementia-2.png"
             alt=""
           />
           <img
             className="object-cover w-full h-48 rounded shadow-lg"
-            src="https://res.cloudinary.com/drywqd3hf/image/upload/v1661407911/238x192-dementia-1_vu9a5j.png"
+            src="https://athulyahomecare.com/images/238x192-dementia-1.png"
             alt=""
           />
         </div>
