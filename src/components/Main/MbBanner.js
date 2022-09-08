@@ -46,7 +46,7 @@ function MbBanner() {
       textarea: textarea.value,
     };
     let response = await fetch(
-      "http://162.241.222.86:5000/contactdementiacarebangalore",
+      "https://contact-app-server-athulya.herokuapp.com/contactdementiacarehyderabad",
       {
         method: "POST",
         headers: {
@@ -91,7 +91,7 @@ function MbBanner() {
         <div className="">
           <div className="container text-justify mt-5 mb-5 ">
             <h1 className="xl:text-3xl  flex justify-center text-xl font-sans font-semibold  md:text-white  text-sky-800 md:p-5 p-2  ">
-            Submit Your Details
+              Submit Your Details
             </h1>
             <div className="grid grid-flow-row  bg-zinc-100  rounded-2xl px-5 p-3 xl:block  font-Poppins">
               <div>

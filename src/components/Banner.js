@@ -138,7 +138,7 @@ function Banner() {
                               type="email"
                               name="email"
                               id="floating_email"
-                              class="block py-2.5 px-0 w-full text-xl font-Robot text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
+                              class="block py-2.5 px-0 w-full text-xl font-Robot font-semibold   text-gray-900 bg-transparent border-0 border-b-2 border-sky-900 appearance-none   focus:outline-none focus:ring-0 focus:border-sky-800 peer"
                               placeholder=" "
                               required
                             />

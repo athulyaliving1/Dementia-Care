@@ -10,12 +10,7 @@ export const Content = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
-        <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          className="grid grid-cols-2 gap-5"
-        >
+        <div className="grid grid-cols-2 gap-5">
           <img
             className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
             src="https://athulyahomecare.com/images/496x226-dementi.png"
@@ -32,7 +27,7 @@ export const Content = () => {
             alt=""
           />
         </div>
-        <div data-aos="fade-left" className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center">
           <h1 className="text-center text-sky-800 text-xl  font-Poppins font-semibold  md:text-3xl m-5">
             Holistic Memory Care
           </h1>

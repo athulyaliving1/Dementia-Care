@@ -5,10 +5,11 @@ import Footer from "./Main/Footer";
 import { Iconpage } from "./Main/Iconpage";
 import MbBanner from "./Main/MbBanner";
 import MbNav from "./Main/MbNav";
-import MbTestMonial from "./Main/MbTestMonial";
+// import MbTestMonial from "./Main/MbTestMonial";
 import NavbarXl from "./Main/NavbarXl";
 import Para from "./Main/Para";
 import Testimonal from "./Main/Testmonial";
+import MbTestMonialtest from "./MbTestMonialtest";
 
 function Home() {
   return (
@@ -20,8 +21,9 @@ function Home() {
       <Content />
       <Para />
       <Iconpage />
-      <Testimonal/>
-      <MbTestMonial/>
+      <Testimonal />
+    
+      <MbTestMonialtest />
       <Footer />
     </div>
   );
