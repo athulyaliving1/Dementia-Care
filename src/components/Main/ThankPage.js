@@ -5,7 +5,7 @@ import Thankpic from "../Main/Assets/thank-you-page.jpg";
 function Thankpage() {
   return (
     <div>
-      <section class="text-gray-600 body-font bg-zinc-100 ">
+      <section class="text-gray-600 body-font bg-zinc-100 w-screen h-screen">
         <div class="container px-5 py-24 mx-auto flex flex-wrap ">
           <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden xl:mt-10  xl:pb-5">
             <img
