@@ -33,7 +33,7 @@ export default function Testimonal() {
             totalSlides={1}
           >
             <h1 className="m-5 text-xl font-semibold text-center text-sky-800 font-Poppins md:text-3xl">
-              What Our Clients Are Saying ?
+              What Our Clients Are Saying 
             </h1>
             <Slider>
               <Slide index={0} tabIndex="null">
