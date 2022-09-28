@@ -14,17 +14,18 @@ function MbTestMonialtest() {
   return (
     <div className="block md:hidden">
       <div>
-        <div className="items-center justify-between  absolute z-0 ">
+        <div className="absolute z-0 items-center justify-between ">
           <div className="w-1/3 bg-white " />
-          <div className="w-4/6 ml-16 bg-gray-100 h-full" />
+          <div className="w-4/6 h-full ml-16 bg-gray-100" />
         </div>
-        <div className="xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container relative z-40">
+
+        <div className="relative z-40 px-8 py-20 xl:px-20 2xl:mx-auto 2xl:container">
           <CarouselProvider
             naturalSlideWidth={100}
             isIntrinsicHeight={true}
             totalSlides={3}
           >
-            <div className="flex justify-center text-xl mt-5 mb-5 font-semibold ">
+            <div className="flex justify-center mt-5 mb-5 text-xl font-semibold ">
               <Heading title=" What Our Client  Are Saying" />
             </div>
             <Slider>
@@ -32,7 +33,7 @@ function MbTestMonialtest() {
                 <div
                   data-aos="fade-up"
                   data-aos-anchor-placement="top-center"
-                  className="md:grid grid-flow-col-dense mb-10"
+                  className="grid-flow-col-dense mb-10 md:grid"
                 >
                   <div class="max-w-md   px-8 py-4 mx-auto mt-16 bg-white rounded-lg  ">
                     <div class="flex justify-center -mt-16 md:justify-end">
@@ -53,7 +54,7 @@ function MbTestMonialtest() {
                 </div>
               </Slide>
               <Slide index={1}>
-                <div className="md:grid grid-flow-col">
+                <div className="grid-flow-col md:grid">
                   <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg ">
                     <div class="flex justify-center -mt-16 md:justify-end">
                       <img
@@ -73,7 +74,7 @@ function MbTestMonialtest() {
                 </div>
               </Slide>
               <Slide index={1}>
-                <div className="md:grid grid-flow-col">
+                <div className="grid-flow-col md:grid">
                   <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg ">
                     <div class="flex justify-center -mt-16 md:justify-end">
                       <img
@@ -95,7 +96,7 @@ function MbTestMonialtest() {
             </Slider>
             {/* <div className="">
               <ButtonBack
-                className="cursor-pointer  "
+                className="cursor-pointer "
                 role="button"
                 aria-label="previous slide"
               >
@@ -118,7 +119,7 @@ function MbTestMonialtest() {
               <ButtonNext
                 role="button"
                 aria-label="next slide"
-                className="cursor-pointer ml-2 absolute z-30 right-0 mr-8 focus:outline-none "
+                className="absolute right-0 z-30 ml-2 mr-8 cursor-pointer focus:outline-none "
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

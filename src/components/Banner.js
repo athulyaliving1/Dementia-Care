@@ -45,7 +45,7 @@ function Banner() {
       textarea: textarea.value,
     };
     let response = await fetch(
-      "https://contact-app-server-athulya.herokuapp.com/contactdementiacarebangalore",
+      "https://contact-app-server-athulya.herokuapp.com/contact",
       {
         method: "POST",
         headers: {
@@ -79,21 +79,21 @@ function Banner() {
     }, 2000);
   };
   return (
-    <div className=" bg-zinc-50 pt-5 md:pt-16 md:mt-0  md:block hidden  ">
+    <div className="hidden pt-5 bg-zinc-50 md:pt-16 md:mt-0 md:block">
       <div
         class="
-		md:bg-[url('https://athulyahomecare.com/images/baner.jpg')]  h-full w-full bg-cover bg-no-repeat  md:pb-32 "
+		md:bg-[url('https://athulyahomecare.com/images/baner.jpg')]  bg-cover bg-center bg-no-repeat  md:pb-32 "
       >
-        <div className="container mx-auto   grid md:grid-cols-2">
-          <div className="md:hidden block mt-10 md:mt-0"></div>
+        <div className="container grid mx-auto md:grid-cols-2">
+          <div className="block mt-10 md:hidden md:mt-0"></div>
           <div className="">
-            <div className="container text-justify mt-5 mb-5 ">
-              <h1 className="xl:text-3xl  flex justify-center text-xl font-sans font-semibold  md:text-white  text-sky-800 md:p-5 p-2  ">
+            <div className="container mt-5 mb-5 text-justify ">
+              <h1 className="flex justify-center p-2 font-sans text-xl font-semibold xl:text-3xl md:text-white text-sky-800 md:p-5 ">
                 Submit Your Details
               </h1>
               <div
                 data-aos="fade-up"
-                className="grid grid-flow-row  bg-zinc-50  rounded-2xl px-5 p-5 xl:block  font-Poppins"
+                className="grid grid-flow-row p-5 px-5 bg-zinc-50 rounded-2xl xl:block font-Poppins"
               >
                 <div>
                   <Formik
@@ -122,7 +122,7 @@ function Banner() {
                               required
                             />
                             {errors.name && touched.name ? (
-                              <p className="text-pink-500 font-Poppins font-semibold">
+                              <p className="font-semibold text-pink-500 font-Poppins">
                                 {errors.name}
                               </p>
                             ) : null}
@@ -143,7 +143,7 @@ function Banner() {
                               required
                             />
                             {errors.email && touched.email ? (
-                              <p className="text-pink-500 font-Poppins font-semibold">
+                              <p className="font-semibold text-pink-500 font-Poppins">
                                 {errors.email}
                               </p>
                             ) : null}
@@ -164,7 +164,7 @@ function Banner() {
                               required
                             />
                             {errors.number && touched.number ? (
-                              <p className="text-pink-500 font-Poppins font-semibold">
+                              <p className="font-semibold text-pink-500 font-Poppins">
                                 {errors.number}
                               </p>
                             ) : null}
@@ -177,7 +177,7 @@ function Banner() {
                           </div>
                           <div class="flex flex-col mt-2">
                             <label
-                              className="text-sky-800  text-xl font-semibold"
+                              className="text-xl font-semibold text-sky-800"
                               htmlFor="textarea"
                             >
                               Message
@@ -189,12 +189,12 @@ function Banner() {
                               class="peer   w-100 mt-2 py-3 px-3 rounded-lg bg-zinc-50  border-2   border-sky-800   font-semibold focus:border-sky-700 focus:outline-none"
                             />
                             {errors.textarea && touched.textarea ? (
-                              <p className="text-pink-500 font-Poppins font-semibold">
+                              <p className="font-semibold text-pink-500 font-Poppins">
                                 {errors.textarea}
                               </p>
                             ) : null}
                           </div>
-                          <div className="flex justify-center  md:py-1">
+                          <div className="flex justify-center md:py-1">
                             <button class="  rounded-md py-3 px-6 m-1 overflow-hidden relative group cursor-pointer border-2  border-sky-800  text-white bg-pink-500 font-bold">
                               <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-sky-900 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
                               <span class="relative  text-white transition duration-300 group-hover:text-white ease">

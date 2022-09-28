@@ -21,22 +21,22 @@ function MbTestimonial() {
   }, []);
 
   return (
-    <div className=" block md:hidden ">
-      <div className="container mx-auto  flex justify-center">
-        <div className="font-Poppins text-3xl font-semibold  mt-3 text-sky-800  ">
-          <div className="md:text-3xl  font-sans font-semibold  text-xl ">
-            <h1 className="text-center text-sky-800 text-xl  font-Poppins font-semibold  md:text-3xl m-5">
-              What Our Clients Are Saying
+    <div className="block md:hidden">
+      <div className="container flex justify-center mx-auto">
+        <div className="mt-3 text-3xl font-semibold font-Poppins text-sky-800 ">
+          <div className="font-sans text-xl font-semibold md:text-3xl ">
+            <h1 className="m-5 text-xl font-semibold text-center text-sky-800 font-Poppins md:text-3xl">
+              What Our Clients Are Saying 
             </h1>
           </div>
         </div>
       </div>
       <Slider {...settings}>
         <div className="container mx-auto">
-          <div className=" bg-zinc-100 ">
+          <div className=" bg-zinc-100">
             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
               <div data-aos="flip-left" class="h-full text-center">
-                <div className=" flex justify-end">
+                <div className="flex justify-end ">
                   <img
                     alt="testimonial"
                     class="w-20 h-20   mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
@@ -60,7 +60,7 @@ function MbTestimonial() {
           <div className="bg-zinc-100 ">
             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
               <div class="h-full text-center">
-                <div className=" flex justify-end">
+                <div className="flex justify-end ">
                   <img
                     alt="testimonial"
                     class="w-20 h-20   mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
@@ -82,7 +82,7 @@ function MbTestimonial() {
           <div className="bg-zinc-100 ">
             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
               <div class="h-full text-center">
-                <div className=" flex justify-end">
+                <div className="flex justify-end ">
                   <img
                     alt="testimonial"
                     class="w-20 h-20   mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"

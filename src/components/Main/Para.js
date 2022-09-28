@@ -8,14 +8,14 @@ function Para() {
   }, []);
 
   return (
-    <div>
-      <div className="text-center text-sky-800 text-xl  font-Poppins font-semibold  md:text-3xl m-5">
+    <div className="container mx-auto">
+      <div className="m-5 text-xl font-semibold text-center text-sky-800 font-Poppins md:text-3xl">
         "Cognitive Disability Doesn't Mean The Journey Has To End."
       </div>
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="bottom-bottom"
-        className="container   mx-auto md:px-0 px-5  md:text-xl font-Roboto opacity-80 text-justify pb-5 "
+        className="pb-5 text-justify md:px-0 md:text-xl font-Roboto opacity-80"
       >
         <p>
           Our dedicated caregivers are committed to helping your loved ones live

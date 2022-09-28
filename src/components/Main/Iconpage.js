@@ -14,9 +14,9 @@ export const Iconpage = () => {
 
   return (
     <div className="bg-zinc-100">
-      <div className="  px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-28">
+      <div className="container py-16 mx-auto lg:py-28">
         <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
-          <p className="text-center text-sky-800 text-xl  font-Poppins font-semibold  md:text-3xl m-5">
+          <p className="m-5 text-xl font-semibold text-center text-sky-800 font-Poppins md:text-3xl">
             What's Included In Our Dementia Care
           </p>
         </div>
@@ -32,7 +32,7 @@ export const Iconpage = () => {
               alt="Person"
             />
             <div className="flex flex-col items-center">
-              <p className="text-lg font-semibold font-Roboto  text-sky-800 text-center">
+              <p className="text-lg font-semibold text-center font-Roboto text-sky-800">
                 24-hour emergency response system
               </p>
             </div>
@@ -44,7 +44,7 @@ export const Iconpage = () => {
               alt="Person"
             />
             <div className="flex flex-col items-center">
-              <p className="text-lg font-semibold font-Roboto text-sky-800 text-center">
+              <p className="text-lg font-semibold text-center font-Roboto text-sky-800">
                 Personalized Care Plans
               </p>
             </div>
@@ -56,7 +56,7 @@ export const Iconpage = () => {
               alt="Person"
             />
             <div className="flex flex-col items-center">
-              <p className="text-lg font-semibold font-Roboto text-sky-800 text-center">
+              <p className="text-lg font-semibold text-center font-Roboto text-sky-800">
                 24-hour Nursing Care
               </p>
             </div>
@@ -68,7 +68,7 @@ export const Iconpage = () => {
               alt="Person"
             />
             <div className="flex flex-col items-center">
-              <p className="text-lg font-semibold font-Roboto text-sky-800 text-center">
+              <p className="text-lg font-semibold text-center font-Roboto text-sky-800">
                 Daily activities
               </p>
             </div>
@@ -80,7 +80,7 @@ export const Iconpage = () => {
               alt="Person"
             />
             <div className="flex flex-col items-center">
-              <p className="text-lg font-semibold font-Roboto text-sky-800 text-center">
+              <p className="text-lg font-semibold text-center font-Roboto text-sky-800">
                 Nutritious diet
               </p>
             </div>

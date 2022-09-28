@@ -13,86 +13,92 @@ export default function Testimonal() {
   }, []);
 
   return (
-    <div className="md:block  hidden">
-      <div className="flex items-center justify-between  absolute z-0  ">
-        <div className="w-1/3 bg-white " />
-        <div className="w-4/6 ml-16 bg-gray-100 h-full" />
-      </div>
+    <div className="hidden md:block">
       <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        className="xl:px-20 px-8 py-20 2xl:mx-auto 2xl:container relative z-40"
+        class="
+		md:bg-[url('https://res.cloudinary.com/drywqd3hf/image/upload/v1664348936/11852427_4858794_ztbumk.jpg')]    bg-cover bg-center bg-no-repeat "
       >
-        <CarouselProvider
-          naturalSlideWidth={100}
-          isIntrinsicHeight={true}
-          totalSlides={1}
+        <div className="absolute z-0 flex items-center justify-between ">
+          <div className="w-1/3 bg-white " />
+          <div className="w-4/6 h-full ml-16 bg-gray-100" />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          className="relative z-40 px-8 py-20 xl:px-20 2xl:mx-auto 2xl:container"
         >
-          <h1 className="text-center text-sky-800 text-xl  font-Poppins font-semibold  md:text-3xl m-5">
-            What Our Clients Are Saying
-          </h1>
-          <Slider>
-            <Slide index={0} tabIndex="null">
-              <div className="">
-                <section class=" body-font">
-                  <div class="container px-5 py-24 mx-auto">
-                    <div class="flex flex-wrap -m-4">
-                      <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                        <div class="h-full text-center">
-                          <img
-                            alt="testimonial"
-                            class="w-20 h-20   mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
-                            src="https://athulyahomecare.com/images/11.jpg"
-                          />
-                          <p class="leading-relaxed  md:text-xl font-Roboto opacity-80 text-justify pb-5 ">
-                            Thank you very much Mr. Sathish Sir who attended the
-                            patient. He is very humble and polite to give the
-                            services to my grandfather with dementia. He
-                            explained the process and diseases in simple terms.
-                          </p>
-                          <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-6 mb-4"></span>
+          <CarouselProvider
+            naturalSlideWidth={100}
+            isIntrinsicHeight={true}
+            totalSlides={1}
+          >
+            <h1 className="m-5 text-xl font-semibold text-center text-sky-800 font-Poppins md:text-3xl">
+              What Our Clients Are Saying ?
+            </h1>
+            <Slider>
+              <Slide index={0} tabIndex="null">
+                <div className="">
+                  <section class=" body-font">
+                    <div class="container px-5 py-24 mx-auto ">
+                      <div class="flex flex-wrap -m-4 content-center">
+                        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                          <div class="h-full text-center">
+                            <img
+                              alt="testimonial"
+                              class="w-20 h-20   mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
+                              src="https://athulyahomecare.com/images/11.jpg"
+                            />
+                            <p class="leading-relaxed  md:text-xl font-Roboto opacity-80 text-justify pb-5 ">
+                              Thank you very much Mr. Sathish Sir who attended
+                              the patient. He is very humble and polite to give
+                              the services to my grandfather with dementia. He
+                              explained the process and diseases in simple
+                              terms.
+                            </p>
+                            <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-6 mb-4"></span>
+                          </div>
                         </div>
-                      </div>
-                      <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-                        <div class="h-full text-center">
-                          <img
-                            alt="testimonial"
-                            class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100 "
-                            src="https://athulyahomecare.com/images/11.jpg"
-                          />
-                          <p class="leading-relaxed md:text-xl font-Roboto opacity-80 text-justify pb-5 ">
-                            I have my own share of experience with multiple
-                            assisted living facilities. Athulya care services
-                            definitely tops the list, very very professional
-                            memory care provided by the nurses to my in law.
-                            Thank you so much.
-                          </p>
-                          <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-6 mb-4"></span>
+                        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                          <div class="h-full text-center">
+                            <img
+                              alt="testimonial"
+                              class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100 "
+                              src="https://athulyahomecare.com/images/11.jpg"
+                            />
+                            <p class="leading-relaxed md:text-xl font-Roboto opacity-80 text-justify pb-5 ">
+                              I have my own share of experience with multiple
+                              assisted living facilities. Athulya care services
+                              definitely tops the list, very very professional
+                              memory care provided by the nurses to my in law.
+                              Thank you so much.
+                            </p>
+                            <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-6 mb-4"></span>
+                          </div>
                         </div>
-                      </div>
-                      <div class="lg:w-1/3 lg:mb-0 p-4">
-                        <div class="h-full text-center">
-                          <img
-                            alt="testimonial"
-                            class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
-                            src="https://athulyahomecare.com/images/11.jpg"
-                          />
-                          <p class="leading-relaxed md:text-xl font-Roboto opacity-80 text-justify pb-5">
-                            Athulya was extremely supportive was very responding
-                            immediately in calls and what’s app chat. Completely
-                            happy with their care service and appreciate their
-                            support and help. Thanks once again.
-                          </p>
-                          <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-6 mb-4"></span>
+                        <div class="lg:w-1/3 lg:mb-0 p-4">
+                          <div class="h-full text-center">
+                            <img
+                              alt="testimonial"
+                              class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-sky-800 bg-gray-100"
+                              src="https://athulyahomecare.com/images/11.jpg"
+                            />
+                            <p class="leading-relaxed md:text-xl font-Roboto opacity-80 text-justify pb-5">
+                              Athulya was extremely supportive was very
+                              responding immediately in calls and what’s app
+                              chat. Completely happy with their care service and
+                              appreciate their support and help. Thanks once
+                              again.
+                            </p>
+                            <span class="inline-block h-1 w-10 rounded bg-pink-500 mt-6 mb-4"></span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </section>
-              </div>
-            </Slide>
-          </Slider>
-          {/* <div className="flex items-center mt-8">
+                  </section>
+                </div>
+              </Slide>
+            </Slider>
+            {/* <div className="flex items-center mt-8">
             <ButtonBack
               className="cursor-pointer "
               role="button"
@@ -115,7 +121,7 @@ export default function Testimonal() {
             <ButtonNext
               role="button"
               aria-label="next slide"
-              className="cursor-pointer ml-2"
+              className="ml-2 cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +137,8 @@ export default function Testimonal() {
               </svg>
             </ButtonNext>
           </div> */}
-        </CarouselProvider>
+          </CarouselProvider>
+        </div>
       </div>
     </div>
   );

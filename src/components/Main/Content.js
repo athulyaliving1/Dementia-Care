@@ -8,7 +8,7 @@ export const Content = () => {
   }, []);
 
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="container py-16 mx-auto lg:py-28 ">
       <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
         <div className="grid grid-cols-2 gap-5">
           <img
@@ -28,11 +28,11 @@ export const Content = () => {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <h1 className="text-center text-sky-800 text-xl  font-Poppins font-semibold  md:text-3xl m-5">
+          <h1 className="m-5 text-xl font-semibold text-center text-sky-800 font-Poppins md:text-3xl">
             Holistic Memory Care
           </h1>
           <div className="pb-4 mb-4 border-b border-pink-500 ">
-            <p className=" md:text-xl font-Roboto opacity-80 text-justify">
+            <p className="text-justify md:text-xl font-Roboto opacity-80">
               Athulya assisted living in Bangalore offers the kind of care we
               would desire for each one of our loved ones. Led by kindness,
               compassion, and dignity, We are dedicated to defining and
@@ -40,8 +40,8 @@ export const Content = () => {
               their families.
             </p>
           </div>
-          <div className="pb-4 mb-4 border-b border-pink-500  ">
-            <p className="md:text-xl font-Roboto opacity-80 text-justify">
+          <div className="pb-4 mb-4 border-b border-pink-500 ">
+            <p className="text-justify md:text-xl font-Roboto opacity-80">
               We are specialized in nursing care, dementia care and short-term
               respite care for seniors. The Athulya assisted living facility
               provides an affordable luxury dementia care offering at the heart
