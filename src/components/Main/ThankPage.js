@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Thankpic from "../Main/Assets/thank-you-page.jpg";
+import Thankpic from "../Main/Assets/vertical-mob-banner.jpg";
 
 function Thankpage() {
   return (
