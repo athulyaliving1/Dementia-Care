@@ -14,6 +14,7 @@ function App() {
       <HashRouter>
         <Routes>
           <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
           <Route path="tkpage" element={<Thankpage />} />
           <Route
             path="*"
