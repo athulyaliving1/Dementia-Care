@@ -33,7 +33,7 @@ export const Content = () => {
           </h1>
           <div className="pb-4 mb-4 border-b border-pink-500 ">
             <p className="text-justify md:text-xl font-Roboto opacity-80">
-              Athulya assisted living in Bangalore offers the kind of care we
+              Athulya assisted living in Hyderabad offers the kind of care we
               would desire for each one of our loved ones. Led by kindness,
               compassion, and dignity, We are dedicated to defining and
               informing the provision of care for seniors with dementia and
@@ -45,7 +45,7 @@ export const Content = () => {
               We are specialized in nursing care, dementia care and short-term
               respite care for seniors. The Athulya assisted living facility
               provides an affordable luxury dementia care offering at the heart
-              of the community in Bangalore.
+              of the community in Hyderabad.
             </p>
           </div>
         </div>
