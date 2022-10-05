@@ -58,15 +58,12 @@ export default function XlForm() {
       });
     }
 
-    await axios.post(
-      "http://162.241.222.86:5000/contactdementiacarehyderabad",
-      {
-        name,
-        number,
-        email,
-        textarea,
-      }
-    );
+    await axios.post("http://162.241.222.86:5000/contactdementiacarecochin", {
+      name,
+      number,
+      email,
+      textarea,
+    });
 
     // Swal.fire({
     //   icon: "success",
