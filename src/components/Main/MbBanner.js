@@ -67,7 +67,7 @@ function MbBanner() {
     }
 
     await axios.post(
-      "http://162.241.222.86:5000/contact",
+      "http://162.241.222.86:5000/contactdementiacarebangalore",
       {
         name,
         number,
