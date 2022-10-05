@@ -66,15 +66,12 @@ function MbBanner() {
       });
     }
 
-    await axios.post(
-      "http://162.241.222.86:5000/contactdementiacarecoimbatore",
-      {
-        name,
-        number,
-        email,
-        textarea,
-      }
-    );
+    await axios.post("http://162.241.222.86:5000/contactdementiacarechennai", {
+      name,
+      number,
+      email,
+      textarea,
+    });
 
     // Swal.fire({
     //   icon: "success",
