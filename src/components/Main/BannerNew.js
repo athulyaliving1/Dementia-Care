@@ -1,7 +1,7 @@
 import React from "react";
 import WhatsAppWidget from "react-whatsapp-chat-widget";
 import "react-whatsapp-chat-widget/index.css";
-import banner from "./Assets/bannermd.jpg";
+// import banner from "./Assets/bannermd.jpg";
 
 function Banner() {
   return (
@@ -9,7 +9,7 @@ function Banner() {
       <div>
         <img
           className="hidden w-full h-full pt-10 bg-cover md:block md:pt-16 lg:pt-20 "
-          src={banner}
+          src="https://athulyahomecare.com/lp/images/bannermd.jpg"
           alt="banner "
         />
       </div>
