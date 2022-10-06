@@ -16,7 +16,7 @@ export default function Testimonal() {
     <div className="hidden md:block">
       <div
         class="
-		md:bg-[url('https://res.cloudinary.com/drywqd3hf/image/upload/v1664348936/11852427_4858794_ztbumk.jpg')]    bg-cover bg-center bg-no-repeat "
+         md:bg-[url('http://athulyahomecare.com/lp/images/ztbunk.jpg')]    bg-cover bg-center bg-no-repeat "
       >
         <div className="absolute z-0 flex items-center justify-between ">
           <div className="w-1/3 bg-white " />

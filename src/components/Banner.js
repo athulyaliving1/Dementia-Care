@@ -45,7 +45,7 @@ function Banner() {
       textarea: textarea.value,
     };
     let response = await fetch(
-      "https://contact-app-server-athulya.herokuapp.com/contact",
+      "http://162.241.222.86:5000/ contactdementiacarebangalore",
       {
         method: "POST",
         headers: {

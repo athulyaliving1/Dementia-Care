@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 export const Content = () => {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 3000 });
   }, []);
 
   return (
@@ -12,16 +12,19 @@ export const Content = () => {
       <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
         <div className="grid grid-cols-2 gap-5">
           <img
+            data-aos="flip-up"
             className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
             src="https://athulyahomecare.com/images/496x226-dementi.png"
             alt=""
           />
           <img
+            data-aos="flip-up"
             className="object-cover w-full h-48 rounded shadow-lg"
             src="https://athulyahomecare.com/images/238x192-dementia-2.png"
             alt=""
           />
           <img
+            data-aos="flip-up"
             className="object-cover w-full h-48 rounded shadow-lg"
             src="https://athulyahomecare.com/images/238x192-dementia-1.png"
             alt=""

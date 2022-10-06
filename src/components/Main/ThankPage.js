@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Thankpic from "../Main/Assets/vertical-mob-banner.jpg";
+// import Thankpic from "../Main/Assets/vertical-mob-banner.jpg";
 
 function Thankpage() {
   return (
@@ -11,7 +11,7 @@ function Thankpage() {
             <img
               alt="feature"
               class="object-cover object-center h-full w-full"
-              src={Thankpic}
+              src="https://www.athulyahomecare.com/lp/images/vertical-mob-banner.jpg"
             />
           </div>
           <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden xl:mt-10 grid  gap-4 content-center ">

@@ -5,6 +5,12 @@ import Footer from "./components/Main/Footer.js";
 import MbNav from "./components/Main/MbNav.js";
 import NavbarXl from "./components/Main/NavbarXl.js";
 import Thankpage from "./components/Main/ThankPage.js";
+import { loadProgressBar } from "axios-progress-bar";
+import "axios-progress-bar/dist/nprogress.css";
+
+
+
+loadProgressBar();
 
 function App() {
   return (
