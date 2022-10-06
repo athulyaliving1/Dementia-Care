@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { UrlLink } from "./Url";
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -39,6 +40,7 @@ export default function XlForm() {
   const [number, setNumber] = useState("");
   const [email, setEmail] = useState("");
   const [textarea, setTextarea] = useState("");
+  const [loadingInProgress, setLoading] = useState(false);
 
   const {
     register,
@@ -49,6 +51,7 @@ export default function XlForm() {
   });
 
   const sendDataToAPI = async () => {
+    setLoading(true);
     if (!name || !number || !email || !textarea) {
       return Swal.fire({
         icon: "error",
@@ -58,7 +61,7 @@ export default function XlForm() {
       });
     }
 
-    await axios.post("http://162.241.222.86:5000/contactdementiacarechennai", {
+    await axios.post(UrlLink, {
       name,
       number,
       email,
@@ -73,6 +76,8 @@ export default function XlForm() {
     //   timer: 2000,
     // });
 
+    setLoading(false);
+
     navigate("/tkpage");
 
     setTimeout(function () {
@@ -84,83 +89,94 @@ export default function XlForm() {
     <div className="bg-sky-900 ">
       {/* 2xl Large devices */}
       <div className="container mx-auto">
-        <div className="hidden p-3 xl:block font-Ubuntu">
-          <form
-            onSubmit={handleSubmit(sendDataToAPI)}
-            class="p-6  flex flex-col justify-center"
-          >
-            <div className="grid grid-flow-col space-x-5 md:grid-cols-5">
-              <div className="flex flex-col">
-                <input
-                  {...register("name")}
-                  type="text"
-                  id="name"
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="Enter Your Name"
-                  className="block w-full px-3 py-3 m-0 font-semibold text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
-                  name="name"
-                />
-                <p className="font-semibold text-pink-500">
-                  {errors.name?.message}
-                </p>
-              </div>
-
-              <div className="flex flex-col">
-                <input
-                  {...register("email")}
-                  type="email"
-                  id="email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter Your Email"
-                  className="block w-full px-3 py-3 m-0 font-semibold text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
-                  name="email"
-                />
-                <p className="font-semibold text-pink-500">
-                  {errors.email?.message}
-                </p>
-              </div>
-
-              <div className="flex flex-col">
-                <input
-                  {...register("number")}
-                  type="number"
-                  id="number"
-                  onChange={(e) => setNumber(e.target.value)}
-                  placeholder="Enter Your Number"
-                  className="block w-full px-3 py-3 m-0 font-semibold text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
-                  name="number"
-                />
-                <p className="font-semibold text-pink-500">
-                  {errors.number?.message}
-                </p>
-              </div>
-
-              <div className="flex flex-col">
-                <input
-                  {...register("textarea")}
-                  id="textarea"
-                  onChange={(e) => setTextarea(e.target.value)}
-                  placeholder="Enter Your Message"
-                  rows="1"
-                  class="form-control block w-full px-3 py-3  font-semibold text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none "
-                  name="textarea"
-                />
-                <p className="font-semibold text-pink-500">
-                  {errors.textarea?.message}
-                </p>
-              </div>
-
-              <div className="justify-center ">
-                <button
-                  class=" bg-pink-600  text-white font-bold py-3 px-6 rounded-lg   hover:ring-4 ring-sky-700 transition ease-in-out duration-100"
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </div>
+        {loadingInProgress ? (
+          <div className="flex justify-center h-56 gap-4">
+            <div className="grid content-center">
+              <div
+                class="w-12 h-12 rounded-full animate-spin
+              border-x-8 border-solid border-pink-500 border-t-transparent"
+              ></div>
             </div>
-          </form>
-        </div>
+          </div>
+        ) : (
+          <div className="hidden p-3 xl:block font-Ubuntu">
+            <form
+              onSubmit={handleSubmit(sendDataToAPI)}
+              class="p-6  flex flex-col justify-center"
+            >
+              <div className="grid grid-flow-col space-x-5 md:grid-cols-5">
+                <div className="flex flex-col">
+                  <input
+                    {...register("name")}
+                    type="text"
+                    id="name"
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Enter Your Name"
+                    className="block w-full px-3 py-3 m-0 font-semibold text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
+                    name="name"
+                  />
+                  <p className="font-semibold text-pink-500">
+                    {errors.name?.message}
+                  </p>
+                </div>
+
+                <div className="flex flex-col">
+                  <input
+                    {...register("email")}
+                    type="email"
+                    id="email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter Your Email"
+                    className="block w-full px-3 py-3 m-0 font-semibold text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
+                    name="email"
+                  />
+                  <p className="font-semibold text-pink-500">
+                    {errors.email?.message}
+                  </p>
+                </div>
+
+                <div className="flex flex-col">
+                  <input
+                    {...register("number")}
+                    type="number"
+                    id="number"
+                    onChange={(e) => setNumber(e.target.value)}
+                    placeholder="Enter Your Number"
+                    className="block w-full px-3 py-3 m-0 font-semibold text-gray-700 transition ease-in-out bg-white border border-gray-300 border-solid rounded form-control bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none"
+                    name="number"
+                  />
+                  <p className="font-semibold text-pink-500">
+                    {errors.number?.message}
+                  </p>
+                </div>
+
+                <div className="flex flex-col">
+                  <input
+                    {...register("textarea")}
+                    id="textarea"
+                    onChange={(e) => setTextarea(e.target.value)}
+                    placeholder="Enter Your Message"
+                    rows="1"
+                    class="form-control block w-full px-3 py-3  font-semibold text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-pink-500 focus:outline-none "
+                    name="textarea"
+                  />
+                  <p className="font-semibold text-pink-500">
+                    {errors.textarea?.message}
+                  </p>
+                </div>
+
+                <div className="justify-center ">
+                  <button
+                    class=" bg-pink-600  text-white font-bold py-3 px-6 rounded-lg   hover:ring-4 ring-sky-700 transition ease-in-out duration-100"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        )}
       </div>
     </div>
   );
